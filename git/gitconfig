@@ -1,0 +1,23 @@
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+[user]
+    name = Vincent Oord
+    email = git@vincentoord.nl
+[core]
+    autocrlf = false
+[merge]
+    conflictstyle = diff3
+[alias]
+    st = status -sb
+    tree = log --graph --decorate --pretty=oneline --abbrev-commit
+    qlog = log -n5 --oneline
+    pom = pull --rebase origin master
+    co = checkout
+[push]
+    default = upstream
+[help]
+  autocorrect = -1
+

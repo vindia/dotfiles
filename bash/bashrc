@@ -1,0 +1,30 @@
+# Prompt
+export PS1='\[\033[34m\]\u@\h\[\033[1m\]\[\033[32m\][\w]\[\033[0m\]$(type __git_ps1 &>/dev/null && __git_ps1 "\[\033[33m\](%s)\[\033[0m\]")\[\033[35m\]$\[\033[0m\] '
+
+# Colors
+export CLICOLOR=1
+export LSCOLORS=dxgxhxdxcxegedabagacad
+
+# Grep colored output
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='1;31'
+
+# Aliases
+alias backupdb='mysqldump -uroot -pr00t --all-databases | gzip -c > ~/Dropbox/backups/local_databases.gz'
+alias rmuntracked="git st | tail +2 |  awk '{ print $2 }' | xargs rm"
+alias flushdns="dscacheutil -flushcache"
+
+# Git completion for bash
+source ~/src/git-completion.bash
+
+# Autocompletion for ssh hosts
+_complete_ssh_hosts ()
+{
+        COMPREPLY=()
+        cur="${COMP_WORDS[COMP_CWORD]}"
+        comp_ssh_hosts=`cat ~/.ssh/config | grep "^host [a-z]\+" | awk '{print $2}'`
+        COMPREPLY=( $(compgen -W "${comp_ssh_hosts}" -- $cur))
+        return 0
+}
+complete -F _complete_ssh_hosts ssh
+

@@ -1,0 +1,14 @@
+host *
+  ServerAliveInterval 60
+  ServerAliveCountMax 120
+
+# Personal stuff
+host nxs
+  HostName shell.nxs.nl
+  User achterlangsnl
+
+host vindia
+  ForwardAgent yes
+  HostName vincentoord.nl
+  User vincent
+
