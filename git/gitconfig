@@ -5,7 +5,7 @@
     interactive = auto
 [user]
     name = Vincent Oord
-    email = git@vincentoord.nl
+    email = vincent@vincentoord.nl
 [core]
     autocrlf = false
 [merge]
