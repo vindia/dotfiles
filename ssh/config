@@ -7,6 +7,10 @@ host nxs
   HostName shell.nxs.nl
   User achterlangsnl
 
+host rjhome
+  HostName shell.nxs.nl
+  User rjhomecollections
+
 host vindia
   ForwardAgent yes
   HostName vincentoord.nl
