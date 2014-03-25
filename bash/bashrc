@@ -37,3 +37,7 @@ if [[ -e /usr/local/opt/chruby/share/chruby ]]; then
   source /usr/local/opt/chruby/share/chruby/auto.sh
   chruby $(cat ~/.ruby-version)
 fi
+
+export LANG="en_US.utf-8"
+export LANGUAGE=$LANG
+export LC_ALL=$LANG
