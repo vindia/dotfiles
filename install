@@ -9,3 +9,5 @@ mv ruby/gemrc ~/.gemrc
 mv ruby/ruby-version ~/.ruby-version
 mv ssh/config ~/.ssh/config
 mv vim/vimrc ~/.vimrc
+
+echo "Succesfully installed your dotfiles!"

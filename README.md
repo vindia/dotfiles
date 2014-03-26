@@ -5,4 +5,5 @@ My own system personalizations.
 Run this:
 
     $ git clone git@github.com:vindia/dotfiles.git ~/.dotfiles
-    $ ~/.dotfiles/install
+    $ cd ~/.dotfiles
+    $ ./install
