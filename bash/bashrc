@@ -34,9 +34,15 @@ _complete_ssh_hosts ()
 complete -F _complete_ssh_hosts ssh
 
 # chruby
-if [[ -e /usr/local/opt/chruby/share/chruby ]]; then
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
-  source /usr/local/opt/chruby/share/chruby/auto.sh
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  CHRUBY_PATH="/usr/local"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  CHRUBY_PATH="/usr/local/opt/chruby"
+fi
+
+if [[ -e $CHRUBY_PATH/share/chruby ]]; then
+  source $CHRUBY_PATH/share/chruby/chruby.sh
+  source $CHRUBY_PATH/share/chruby/auto.sh
   chruby $(cat ~/.ruby-version)
 fi
 
