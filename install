@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo "Installing your dotfiles..."
+
+mv bash/bashrc ~/.bashrc
+mv bash/inputrc ~/.inputrc
+mv git/gitconfig ~/.gitconfig
+mv ruby/gemrc ~/.gemrc
+mv ruby/ruby-version ~/.ruby-version
+mv ssh/config ~/.ssh/config
+mv vim/vimrc ~/.vimrc
