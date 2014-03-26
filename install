@@ -2,12 +2,12 @@
 
 echo "Installing your dotfiles..."
 
-mv bash/bashrc ~/.bashrc
-mv bash/inputrc ~/.inputrc
-mv git/gitconfig ~/.gitconfig
-mv ruby/gemrc ~/.gemrc
-mv ruby/ruby-version ~/.ruby-version
-mv ssh/config ~/.ssh/config
-mv vim/vimrc ~/.vimrc
+cp bash/bashrc ~/.bashrc
+cp bash/inputrc ~/.inputrc
+cp git/gitconfig ~/.gitconfig
+cp ruby/gemrc ~/.gemrc
+cp ruby/ruby-version ~/.ruby-version
+cp ssh/config ~/.ssh/config
+cp vim/vimrc ~/.vimrc
 
 echo "Succesfully installed your dotfiles!"
