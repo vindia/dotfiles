@@ -17,8 +17,8 @@ alias rmuntracked="git st | tail +2 |  awk '{ print $2 }' | xargs rm"
 alias flushdns="dscacheutil -flushcache"
 
 # Git completion for bash
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  source ~/src/git-completion.bash
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
 fi
 
 # Autocompletion for ssh hosts
