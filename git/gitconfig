@@ -16,6 +16,7 @@
     qlog = log -n10 --oneline
     pom = pull --rebase origin master
     co = checkout
+    staged = diff --cached
 [push]
     default = upstream
 [help]
