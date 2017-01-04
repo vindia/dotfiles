@@ -5,7 +5,7 @@ host *
   ServerAliveCountMax 120
 
 # Personal stuff
-host vindia
+host vincloud
   ForwardAgent yes
   HostName vincentoord.nl
   User vincent
