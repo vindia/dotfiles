@@ -52,3 +52,4 @@ fi
 export LANG="en_US.utf-8"
 export LANGUAGE=$LANG
 export LC_ALL=$LANG
+export EDITOR=vim
