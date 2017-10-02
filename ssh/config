@@ -3,10 +3,3 @@ host *
   UseKeychain yes
   ServerAliveInterval 60
   ServerAliveCountMax 120
-
-# Personal stuff
-host vincloud
-  ForwardAgent yes
-  HostName vincentoord.nl
-  User vincent
-
