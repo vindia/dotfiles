@@ -1,5 +1,6 @@
 host *
-  AddKeysToAgent yes
-  UseKeychain yes
   ServerAliveInterval 60
   ServerAliveCountMax 120
+  # macOS only
+  AddKeysToAgent yes
+  UseKeychain yes
