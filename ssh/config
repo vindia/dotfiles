@@ -1,6 +1,7 @@
 host *
   ServerAliveInterval 60
   ServerAliveCountMax 120
+  IdentityFile ~/.ssh/id_rsa
   # macOS only
   AddKeysToAgent yes
   UseKeychain yes
