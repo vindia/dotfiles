@@ -1,11 +1,9 @@
 "*":
-  Zen:
-    showWordCount: "Right"
-    softWrap: true
   core:
     disabledPackages: [
       "metrics"
     ]
+    projectHome: "/Users/vincent/code"
     telemetryConsent: "no"
     themes: [
       "nord-atom-ui"
@@ -18,31 +16,13 @@
     showIndentGuide: true
     showInvisibles: true
   "exception-reporting":
-    userId: "b8c8305a-9582-d729-d2bf-0343f2c52f8b"
-  "linter-ui-default":
-    panelHeight: 96
-  "nord-atom-ui":
-    darkerFormFocusEffect: true
+    userId: "7a040dd4-c14a-4673-9e3d-fb756b221ff7"
+  "linter-ui-default": {}
   welcome:
     showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
-  wordcount: {}
 ".blade.html.php.text":
   editor:
     commentEnd: " --}}"
     commentStart: "{{-- "
-".html.ruby.text":
-  editor:
-    autoIndent: true
-".rails.ruby.source":
-  editor:
-    autoIndent: true
-".ruby.source":
-  editor:
-    autoIndent: true
-".slim.text":
-  whitespace:
-    ignoreWhitespaceOnCurrentLine: false
-    ignoreWhitespaceOnlyLines: false
-    removeTrailingWhitespace: true
