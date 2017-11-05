@@ -9,6 +9,5 @@ echo ".gemrc" && cp ruby/gemrc ~/.gemrc
 echo ".ruby-version" && cp ruby/ruby-version ~/.ruby-version
 echo ".vimrc" && cp vim/vimrc ~/.vimrc
 echo ".ssh/config" && cp ssh/config ~/.ssh/config && chmod 644 ~/.ssh/config
-echo ".atom/config.cson" && cp atom/config.cson ~/.atom/config.cson
 
 echo "Succesfully installed your dotfiles!"
